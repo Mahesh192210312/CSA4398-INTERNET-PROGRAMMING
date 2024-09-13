@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Restaurant Menu</title>
+</head>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu-container {
+  background: rgba(0, 0, 0, 0.7) url('pngtree-black-hand-drawn-menu-background-picture-backgroundmenubackgroundgreenmenulayeringmenu-recipeadvertising-design-image_87621.jpg') center fixed;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    padding: 20px;
+    background-blend-mode: darken;
+    background-size:fixed
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: orangered;
+    font-size: 2.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header p {
+    font-size: 1.2em;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu-section {
+    margin-bottom: 30px;
+}
+
+.menu-section h2 {
+    border-bottom: 2px solid brown;
+    padding-bottom: 5px;
+    color: brown;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu-item h3 {
+    color: white;
+    font-size: 1.2em;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu-item p {
+    color: whitesmoke;
+    font-size: 1em;
+}
+
+.price {
+    color: orangered;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+</style>
+<body>
+    <div class="menu-container">
+        <header>
+            <h1>Spark</h1>
+            <p>Authentic Indian Cuisine</p>
+        </header>
+
+        <section class="menu-section">
+            <h2>Appetizers</h2>
+            <div class="menu-item">
+                <h3>Samosa</h3>
+                <p>Spiced potato stuffed pastry, served with chutney</p>
+                <span class="price">$5.00</span>
+            </div>
+            <div class="menu-item">
+                <h3>Paneer Tikka</h3>
+                <p>Grilled cottage cheese with aromatic spices</p>
+                <span class="price">$8.00</span>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Main Courses</h2>
+            <div class="menu-item">
+                <h3>Butter Chicken</h3>
+                <p>Chicken simmered in a rich creamy tomato sauce</p>
+                <span class="price">$15.00</span>
+            </div>
+            <div class="menu-item">
+                <h3>Chana Masala</h3>
+                <p>Chickpeas cooked in a spicy tomato-based gravy</p>
+                <span class="price">$12.00</span>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Breads & Sides</h2>
+            <div class="menu-item">
+                <h3>Garlic Naan</h3>
+                <p>Indian flatbread baked in a tandoor oven, brushed with garlic butter</p>
+                <span class="price">$3.00</span>
+            </div>
+            <div class="menu-item">
+                <h3>Basmati Rice</h3>
+                <p>Steamed aromatic rice</p>
+                <span class="price">$2.00</span>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Desserts</h2>
+            <div class="menu-item">
+                <h3>Gulab Jamun</h3>
+                <p>Milk-solid-based sweet dumplings soaked in sugar syrup</p>
+                <span class="price">$4.00</span>
+            </div>
+            <div class="menu-item">
+                <h3>Kheer</h3>
+                <p>Traditional Indian rice pudding flavored with cardamom</p>
+                <span class="price">$5.00</span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

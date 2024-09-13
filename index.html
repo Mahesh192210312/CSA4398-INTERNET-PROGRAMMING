@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container img{
+    float: left;
+    height: 50%;
+    width: 50%;
+}
+.container h1{
+    color: orangered;
+    float: left;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+.navbar ul li{
+    display: inline-table;
+    padding: 18px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 4px;
+    transition: 1s;
+
+}
+.navbar ul li a:hover{
+    box-shadow: 0 3px 50px orangered inset
+}
+.navbar .reservation{
+    padding: 8px;
+    background-color: orangered;
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.Data{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+  background: rgba(0, 0, 0, 0.7) url('food.jpg') center fixed;
+  background-size: cover;
+  background-blend-mode: darken;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px;
+}
+.Data h1{
+    color: orangered;
+    float: Center;
+    margin-bottom: 15px;
+}
+.Data p{
+  margin-bottom: 15px;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  white-space: pre-wrap;
+  font-family: Consolas, 'Courier New', monospace;
+}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.base{
+  background-color: black;
+  height: 100px;
+  color: whitesmoke;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  top: 80px;
+}
+</style>
+<body>
+<!-- Navigation -->
+<div class="container">
+    <div class = "img">
+    <img src = "download.png" alt = "logo" >
+    </div>
+    <div class ="heading">
+    <h1>Spark </h1>
+    </div>
+    <div class="navbar">
+        <ul>
+          <li><a href="About.html">ABOUT</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="Offer.html" >OFFER</a></li>
+          <li><a href="Contact.html">CONTACT</a></li>
+          <li><a class="reservation" href="Register.html">RESERVATION</a></li>
+        </ul>
+    </div>
+</div>
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="h3.avif" width = "100%">
+  <img class="mySlides" src="dinner-food-pie-pizza-wallpaper-preview.jpg" width = "100%">
+  <img class="mySlides" src="IMG_2025.280.jpg" width = "100%">
+</section>
+<!-- Band Description -->
+<section class = "Data">
+<center><h1>Spark</h1></center>
+  <p>
+Welcome to Spark, where culinary artistry meets historic charm in the heart of Charleston, South Carolina. Nestled within the iconic Wentworth Mansion®, our restaurant is a time-honored treasure, a place where the rich history of the Lowcountry converges with the art of modern cuisine. Join us on a gastronomic journey that transcends time, as we invite you to discover the stories, flavors, and traditions that make Spark an enduring culinary destination.
+  </p>
+                                    <center><img src = "download.png" alt = "logo"></center>
+  <p>
+It is a Indian restaurant typically offers a rich and diverse menu inspired by the flavors of India. Expect a variety of dishes, from spicy curries and flavorful biryanis to buttery naan and crispy samosas. The atmosphere often blends traditional Indian decor with warm, inviting colors and fragrant aromas of spices like cumin, turmeric, and cardamom. Whether you enjoy vegetarian options or meat-based dishes, Indian restaurants offer something for everyone, often accompanied by refreshing drinks like lassi or chai.
+  </p>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="sig1.jpg">
+        <img src="sig1.jpg" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc">Starters</div>
+    </div>
+  </div>
+  
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="sig2.webp">
+        <img src="sig2.webp" alt="Forest" width="600" height="400">
+      </a>
+      <div class="desc">Signature Dishes</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="cc.jpg">
+        <img src="cc.jpg" alt="Northern Lights" width="600" height="400">
+      </a>
+      <div class="desc">Cocktails</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="sig1.jpg">
+        <img src="sig1.jpg" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc">Starters</div>
+    </div>
+  </div>
+</section>
+<footer class="base">
+  <center>
+    <br>
+    <br>
+  <h3> &copy Powered by Phoenix Private Limited (JK)</h3>
+</center>
+</footer>
+<script>
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>

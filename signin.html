@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Signin Page
+        </title>
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background: rgba(0, 0, 0, 0.7) url('food.jpg') center fixed;
+            background-size: cover;
+            background-blend-mode: lighten;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background-color: whitesmoke;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"]{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"], input[type="reset"] {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            color: #fff;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: green;
+        }
+
+        input[type="reset"] {
+            background-color: red;
+            float: right;
+        }
+        .title{
+            color: orangered
+        }
+</style>
+    <body>
+        <div class = "form-container">
+            <div class = "heading" align = "center">
+                <div class = "title">
+                <h1>Login ID&nbsp&nbsp</h1> </div>
+                </div>
+        <form onsubmit = "return my_fun()">
+            <b>Username:</b><input type = "text" size = "30" id = "user" required><br/>
+            <b>Password:</b><input type = "text" size = "30" id = "pwd"  required><br/><br/>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset"><br/>
+        </form>
+    </div>
+    </body>
+    <script type="text/javascript">
+        function my_fun()
+           {
+           const myuser=document.getElementById("user").value;
+           const mypwd=document.getElementById("pwd").value;
+           const username = "KING";
+           const pass = "2809";
+           if(myuser === username && mypwd === pass){
+            window.location.replace("Reservationform.html");
+               return false;
+           }
+           else{
+               alert("Invalid Password/Username");
+               return false;
+           }
+           }
+   </script>
+</html>
+
